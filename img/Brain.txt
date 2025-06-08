@@ -1,0 +1,6 @@
+#4285F4 – azul
+#FB923C – laranja
+#FFFFFF - branco
+#333333 – preto
+#6B21A8 – roxo
+#EC4899 – rosa

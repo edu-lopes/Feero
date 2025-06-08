@@ -1,0 +1,6 @@
+#A8D5BA – verde claro
+#7DA7D9 – azul claro
+#FFFFFF - branco
+#E3E3E3 – cinza claro
+#F6E4B2 – amarelo claro
+#A8F0A1 – verde neon

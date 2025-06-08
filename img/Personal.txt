@@ -1,0 +1,6 @@
+#3D6A8E – azul
+#F2F2F2 – cinza
+#FFFFFF - branco
+#8CB74A – verde
+#F4A32B – laranja
+#B33C1E – vermelho
