@@ -222,11 +222,11 @@ p {
 }
 
 .task:nth-child(2) {
-    width: 27%;
+    width: 29%;
 }
 
 .task:nth-child(3) {
-    width: 22%;
+    width: 24%;
 }
 
 .top-task {
