@@ -572,12 +572,12 @@ span {
 }
 
 .info-grayBox {
-    width: 38%;
+    width: 42%;
     height: 90%;
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .info-grayBox h2 {
