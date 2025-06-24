@@ -1,0 +1,140 @@
+body {
+    height: 100vw;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+    background: linear-gradient(to right, #fff 0%, rgba(64, 224, 208, 0.7) 100%);
+}
+
+header {
+    width: 100%;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 55px 0 55px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+    height: 30%;
+    border-radius: 50px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.444);
+}
+
+#sign-in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80%;
+    gap: 4%;
+}
+
+.top-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.top-info h1 {
+    font-size: 34px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}   
+
+.grid-logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+}
+
+.logo1 img, .logo2 img, .logo3 img, .logo4 img {
+    width: 24px;
+}
+
+.grid-logos div {
+    display: flex;
+    justify-content: center;
+    border: 3.5px solid #000;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.emps {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.emps p {
+    font-size: 14px;
+}
+
+.emps input {
+    width: 70%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--cinzaFamily);
+    color: #fff;
+}   
+
+.forget {
+    font-size: 14px;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button {
+    width: 30%;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--brancoFamily);
+    background-color: var(--turquesaLovers);
+    cursor: pointer;
+}
+
+#sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 150%;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    background-color: var(--turquesaLovers);
+}
