@@ -191,12 +191,12 @@ h2 {
 
 .welcome p {
     font-family: "Comfortaa", sans-serif;
+    word-break: keep-all;
     font-size: 16px;
     text-align: center;
     max-width: 55%;
     line-height: 25px;
     margin-top: 2%;
-
 }
 
 #container-task {

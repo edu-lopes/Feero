@@ -27,8 +27,9 @@
     </header>
     <main>
         <section class="welcome">
-            <h2>Welcome to Feero!</h2>
-            <p>Organizing a home or dividing chores shouldn't feel like a work meeting. That's why Feero brings a touch
+            <h2 class="h2-wlc">Welcome to Feero&#33;</h2>
+            <p class="paragraph-wlc">Organizing a home or dividing chores shouldn't feel like a work meeting. That's why
+                Feero brings a touch
                 of lightness to your routine: with harmonious color palettes, personalized modes (like lovers, brain,
                 family, and personal), and a healthy, fun points system, it turns chaos into collaboration.</p>
             <div id="container-task">
@@ -220,7 +221,8 @@
                 <h2>With Feero,
                     chore are transformed!
                     <br>
-                    Lets started <br>now!</h2>
+                    Lets started <br>now!
+                </h2>
                 <button>Click here</button>
                 <img class="mobile-interface" src="img/Interface_Feero_Mobile_page-0001-removebg-preview.png" alt="">
             </div>
@@ -229,12 +231,13 @@
                     <img src="img/Interface_Feero_Mobile_page-0001-removebg-preview.png" alt="">
                 </div>
                 <h2>Fair, is Feero!</h2>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue finibus arcu tincidunt congue.</h3>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue finibus arcu tincidunt
+                    congue.</h3>
             </div>
             <div class="temp3">
                 <div class="titles-temp3">
-                <h2>Fair, is Feero!</h2>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                    <h2>Fair, is Feero!</h2>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
                 </div>
                 <div class="graph-temp3">
                     <img src="img/line-chart.png" alt="Grafico">
@@ -242,7 +245,34 @@
             </div>
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="GSAP/minified/SplitText.min.js"></script>
+    <script>
+        gsap.registerPlugin(SplitText);
+
+        let split = SplitText.create(".paragraph-wlc", {
+            type: "chars, words, lines",
+            wordClass: "word"
+        });
+
+        gsap.from(split.words, {
+            y: 100,
+            autoAlpha: 0,
+            stagger: 0.05
+        });
+
+        let splitH2 = SplitText.create(".h2-wlc", {
+            type: "chars, words, lines",
+            wordClass: "word"
+        });
+
+        gsap.from(splitH2.words, {
+            y: 100,
+            autoAlpha: 0,
+            stagger: 0.55
+        });
+    </script>
+
 </body>
 
 </html>

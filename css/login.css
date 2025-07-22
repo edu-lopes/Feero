@@ -51,7 +51,7 @@ main {
     width: 100%;
 }
 
-.top-info h1 {
+ h1 {
     font-size: 34px;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
@@ -137,4 +137,21 @@ main {
     border-top-left-radius: 100%;
     border-bottom-left-radius: 100%;
     background-color: var(--turquesaLovers);
+    gap: 2%;
+}
+
+#sign-up h1 {
+    color: #fff;
+}
+
+#sign-up p {
+    text-align: center;
+    max-width: 80%;
+    color: #fff;
+}
+
+#sign-up .btn button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin-top: 5%;
 }
