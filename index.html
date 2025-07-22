@@ -29,7 +29,8 @@
         <section class="welcome">
             <h2 class="h2-wlc">Welcome to Feero&#33;</h2>
             <p class="paragraph-wlc">Organizing a home or dividing chores shouldn't feel like a work meeting. That's why
-                Feero brings a touch of lightness to your routine: with harmonious color palettes, personalized modes (like lovers, brain,
+                Feero brings a touch of lightness to your routine: with harmonious color palettes, personalized modes
+                (like lovers, brain,
                 family, and personal), and a healthy, fun points system, it turns chaos into collaboration.</p>
             <div id="container-task">
 
@@ -246,6 +247,7 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="GSAP/minified/SplitText.min.js"></script>
+    <script src="GSAP/minified/ScrollTrigger.min.js"></script>
     <script>
         gsap.registerPlugin(SplitText);
 
@@ -270,6 +272,65 @@
             autoAlpha: 0,
             stagger: 0.55
         });
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to("#content-balls", {
+            scrollTrigger: {
+                trigger: "#content-balls",
+                start: "57% center",
+                end: "bottom center",
+                scrub: 1,
+            },
+            x: 520,
+            autoAlpha: 1,
+        });
+
+        gsap.to(".ball1", {
+            scrollTrigger: {
+                trigger: "#content-balls",
+                start: "57% center",
+                end: "bottom center",
+                scrub: 1,
+                toggleActions: "restart pause reverse pause"
+            },
+            x: 30,
+        });
+
+        gsap.to(".ball2", {
+            scrollTrigger: {
+                trigger: "#content-balls",
+                start: "57% center",
+                end: "bottom center",
+                scrub: 1,
+                toggleActions: "restart pause reverse pause"
+            },
+            x: 230,
+        });
+
+        gsap.to(".ball3", {
+            scrollTrigger: {
+                trigger: "#content-balls",
+                start: "57% center",
+                end: "bottom center",
+                scrub: 1,
+                toggleActions: "restart pause reverse pause"
+            },
+            x: 200,
+        });
+
+        gsap.to(".ball4", {
+            scrollTrigger: {
+                trigger: "#content-balls",
+                start: "57% center",
+                end: "bottom center",
+                scrub: 1,
+                toggleActions: "restart pause reverse pause"
+            },
+            x: 100,
+        });
+
+
     </script>
 
 </body>
