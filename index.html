@@ -275,6 +275,35 @@
 
         gsap.registerPlugin(ScrollTrigger);
 
+        gsap.to("#container-task", {
+            scrollTrigger: {
+                trigger: "#container-task",
+                start: "bottom center",
+                end: "bottom 50%",
+                scrub: 1,
+            },
+            autoAlpha: 0,
+        });
+
+        gsap.to(".paragraph-wlc", {
+            scrollTrigger: {
+                trigger: ".paragraph-wlc",
+                start: "-60% start",
+                end: "start center",
+                scrub: 1,
+            },
+            autoAlpha: 0,
+        });
+
+        gsap.to(".h2-wlc", {
+            scrollTrigger: {
+                trigger: ".h2-wlc",
+                start: "-50% start",
+                scrub: 1,
+            },
+            autoAlpha: 0,
+        });
+
         gsap.to("#content-balls", {
             scrollTrigger: {
                 trigger: "#content-balls",
@@ -330,7 +359,7 @@
             x: 100,
         });
 
-
+        
     </script>
 
 </body>
