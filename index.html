@@ -249,6 +249,7 @@
     <script src="GSAP/minified/SplitText.min.js"></script>
     <script src="GSAP/minified/ScrollTrigger.min.js"></script>
     <script>
+
         gsap.registerPlugin(SplitText);
 
         let split = SplitText.create(".paragraph-wlc", {
@@ -278,9 +279,10 @@
         gsap.to("#container-task", {
             scrollTrigger: {
                 trigger: "#container-task",
-                start: "bottom center",
+                start: "70% center",
                 end: "bottom 50%",
                 scrub: 1,
+                markers: false,
             },
             autoAlpha: 0,
         });
@@ -358,7 +360,6 @@
             },
             x: 100,
         });
-
         
     </script>
 
