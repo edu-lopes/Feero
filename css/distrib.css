@@ -1,0 +1,81 @@
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-family: "Comfortaa", sans-serif;
+}
+
+:root {
+    /*Modo Brains*/
+    --azulBrains: #4285F4;
+    --laranjaBrains: #FB923C;
+    --brancoBrains: #FFFFFF;
+    --pretoBrains: #333333;
+    --roxoBrains: #6B21A8;
+    --rosaBrains: #EC4899;
+
+    /*Modo Family*/
+    --verdeClaroFamily: #A8D5BA;
+    --azulClaroFamily: #7DA7D9;
+    --brancoFamily: #FFFFFF;
+    --cinzaFamily: #e9e9e9;
+    --cinzaFamilEscuro: #d3d3d3;
+    --amareloFamily: #F6E4B2;
+    --verdeNeonFamily: #A8F0A1;
+
+    /*Modo Lovers1 e Lovers2*/
+    /*Lovers1*/
+    --rosaClaroLovers: #FAD4D4;
+    --lavandClaroLovers: #D9D2E9;
+    --brancoLovers: #FFFFFF;
+    --cinzaClaroLovers: #E5E5E5;
+    --lavandaLovers: #B8A8EB;
+
+    /*Lovers2*/
+    --coralLovers: #FF6F61;
+    --turquesaLovers: #00B2A9;
+    --brancoLovers: #FFFFFF;
+    --vinhoLovers: #8A1C1C;
+    --rosaClaroLovers: #F4D8E7;
+    --roxoLovers: #5F259F;
+
+    /*Personal*/
+    --azulPersonal: #3D6A8E;
+    --cinzaPersonal: #F2F2F2;
+    --brancoPersonal: #FFFFFF;
+    --verdePersonal: #8CB74A;
+    --laranjaPersonal: #F4A32B;
+    --vermelhoPersonal: #B33C1E;
+}
+
+#listaItens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cardItem {
+    background-color: var(--coralLovers, #ffb3a7);
+    border-radius: 10px;
+    padding: 15px 20px;
+    width: 160px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.cardItem:hover {
+    transform: scale(1.05);
+}
+
+.cardItem h1 {
+    font-size: 16px;
+    margin: 5px 0;
+}
